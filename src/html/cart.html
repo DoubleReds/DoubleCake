@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>加入购物车页面</title>
+	<link rel="stylesheet" type="text/css" href="../css/cart.css">
+
+</head>
+<body>
+	<div class="container main_home_new max_width">
+		<!--头部-->
+		<header class="global_header">
+			<!--头部显示的上部-->
+			<div class="top">
+				<div class="top_bar">
+					<div class="top_bar_right">
+						<a href="login.html" class="top_bar_right_a1">登录</a>
+						<b>/</b>
+						<a href="register.html" class="top_bar_right_a2">注册</a>
+
+						<a href="" class="top_bar_right_a3">
+							<img src="//newimgcdn.lapetit.cn/web/images/qr_code_top.png">微信
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--头部显示的下部主体内容-->
+			<div class="header_content">
+				<div class="select_city_wrap">
+					<span class="span"></span>
+					<a href="">
+						<span>北京</span>
+					</a>
+					<a href="">查询地址是否可配送</a>
+				</div>
+				<a href="" class="header_content_1" src="//newimgcdn.lapetit.cn/web//images/logo_new.png">
+				</a>
+
+				<div class="search_wrap">
+					<input class="input_wrap" type="text" value="" placeholder="雪域牛乳芝士">
+					<button class="search_btn"></button>
+					<a href="cart.html"><button class="nav_cart_wrap"></button></a>
+				</div>
+
+				<div class="header_content_3">
+					<ul>
+						<li>
+							<a href="index.html" class="active">首页</a>
+						</li>
+						<li>
+							<a href="list.html" class="cake">蛋糕</a>
+						</li>
+						<li>
+							<a href="" class="gift">礼品</a>
+						</li>
+						<li>
+							<a href="" class="hava_inner">企业专区</a>
+							<div class="inner_wrap">
+								<a href="" class="inner_item">企业采购</a>
+								<a href="" class="inner_item">大客户区</a>
+								<a href="" class="inner_item">福利券区</a>
+								<a href="" class="inner_item">银行专区</a>
+								<a href="" class="inner_item">小食盒区</a>
+							</div>
+						</li>
+						<li>
+							<a href="" class="hava_inner">我的诺心</a>
+							<div class="inner_wrap">
+								<a href="" class="inner_item">我的订单</a>
+								<a href="" class="inner_item">找回密码</a>
+								<a href="" class="inner_item">礼卡专区</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+        </header>
+        <!--主体-->
+        <div class="main">
+            <div class="main_wrap">
+                   <!--没有加入购物车之前的默认样式-->
+            <!-- <div class="container_wrap">
+                    <div class="container_login">
+                            <span>您还没有登录，登录后购物车的商品将保存到您的账号中！</span>
+                            <a href="">立即登陆</a>
+                    </div>
+                    <div class="container_cart">您的购物车（0）</div>
+                    <div class="container_tuzi">
+                        <div class="img">
+                            <img src="https://newimgcdn.lapetit.cn/web/images/cart/no_content.png" alt="">
+                        </div>
+                        
+                         <p class="container_list">
+                             <span>您还没有选购商品</span>
+                             <a href="">去逛逛</a>
+                         </p>
+					</div> -->
+					
+			<!--加入购物车之后的样式-->
+			<div class="container_wrap">
+                    <div class="container_login">
+                            <span>您还没有登录，登录后购物车的商品将保存到您的账号中！</span>
+                            <a href="">立即登陆</a>
+                    </div>
+                    <div class="container_cart">您的购物车（<span class="cart_num">0</span>）</div>
+					<ul id="list">
+							
+								<!-- <li class="item">
+									详情区域
+									<div class="msg">
+										<img src="https://img3.doubanio.com/view/photo/s_ratio_poster/public/p480747492.webp" alt="">
+										<h5>肖申克的救赎</h5>
+									</div>
+									用户操作区域
+									<div class="operation">
+											<button>-</button>
+											<input type="text" value="10">
+											<button>+</button>
+									</div>
+									
+								</li> -->
+					</ul>
+            </div>
+            <div class="lunbo">
+                <h2></h2>
+                <a href=""></a>
+                <a href=""></a>
+                <div>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+		</div>
+		<script>
+			function carNum(el){
+				var carListString = getCookie("carList");
+				var carListArray=JSON.parse(carListString);
+				var num=0;
+				for(var i = 0 ; i < carListArray.length ; i++){
+					num+=parseInt(carListArray[i].num);
+				}
+				el.innerHTML = num;
+			}
+			var car = document.querySelector(".car").children[0];
+			carNum(car);
+			car.onclick = function(){
+			location.href = "cart.html"
+		}
+		</script>
+    </body>
+
+    </html>

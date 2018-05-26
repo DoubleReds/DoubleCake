@@ -7,26 +7,26 @@ const imagemin=require("gulp-Imagemin");
 gulp.task("scss",()=>{
 	return gulp.src(["./src/css/**/*.css","./src/scss/**/*.scss"])
 	       .pipe(sass())
-	       .pipe(gulp.dest("dist/css"))
+	       .pipe(gulp.dest("AMD/dist/css"))
 	       .pipe(connect.reload())
 })
 gulp.task("Imagemin", function () {
     gulp.src("./src/images/*.{png,jpg,gif,ico,jpeg}")
         .pipe(imagemin())
-        .pipe(gulp.dest('dist/img'));
+        .pipe(gulp.dest('AMD/dist/img'));
 });
 //es6转化成es5
 gulp.task("javascript",()=>{
 	return gulp.src("./src/script/**/*.js")
 			.pipe(babel({preset:['env']}))
-			.pipe(gulp.dest("dist/script"))
+			.pipe(gulp.dest("AMD/dist/script"))
 			.pipe(connect.reload())
 })
 
 //html把它分开到那去
 gulp.task("html",()=>{
 	return gulp.src("./src/html/**/*.html")
-			.pipe(gulp.dest("dist/html"))
+			.pipe(gulp.dest("AMD/dist/html"))
 			.pipe(connect.reload())
 })
 //watch，监听

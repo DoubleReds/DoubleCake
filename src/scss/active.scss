@@ -1,3 +1,287 @@
+@import "./reset.scss";
 body {
-	color:blue;
+    min-width: 1200px;
+    margin: auto;
+    background: #ebebeb;
+    overflow-x: hidden;
+    font: 12px/1.5 "Hiragino Sans GB", "Microsoft YaHei", Helvetica, '宋体', STFangsong, STXihei, Arial, serif;
+    color: #3e3e3e;
+    font-weight: normal;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+ul {
+    list-style:none;
+}
+img {
+    vertical-align:top;
+}
+.container {
+        min-height: 100%;
+        width: 100%;
+        background: #ffffff;
+    }
+.max_width {
+    width: 100%;
+    max-width: 1920px;
+    margin: auto; 
+}
+/*********************头部显示的上部*************/
+.global_header{
+    width: 100%;
+    min-width: 1200px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e5e5;
+    .top{
+        width:100%;
+        background: #f9f9f9;
+        .top_bar{
+            height: 30px;
+            width:1200px;
+            margin:0 auto;
+            line-height: 30px;
+        .top_bar_right{
+                float:right; 
+        .top_bar_right_a1{
+            font-size: 100%;
+            color: inherit;
+            text-decoration: none;
+                &:hover{
+            color:red;
+            }  
+        }
+        b{
+            font-style: normal;
+            font-weight: normal;
+        }
+        .top_bar_right_a2{
+           font-size: 100%;
+           color: inherit;
+           text-decoration: none;
+           vertical-align: baseline;
+           background: transparent;
+          &:hover{
+            color:red;
+          } 
+        }
+        .top_bar_right_a3{
+            font-size: 100%;
+            height:100%;
+            line-height:100%;
+            color:inherit;
+            text-decoration: none;
+            background:url(../img/icons.png)  -317px -252px  no-repeat;
+            vertical-align: baseline;
+            padding-left: 36px;
+            margin-left: 30px;
+            img{
+                position: absolute;
+                width: 195px;
+                height: 239px;
+                max-width: none;
+                top: 20px;
+                left: 92%;
+                margin-left: -100px;
+                display:none;  
+                z-index: 520;
+            }
+            &:hover img{
+                display:block;
+            }
+            &:hover{
+                color:red;
+            }
+        }
+    }
+   }
+}
+}
+/*****************头部显示的下部*************/
+.header_content{
+    width:1200px;
+    height:124px;
+    margin:0 auto;
+    position:relative;
+    .span{
+        display:block;
+        width:40px;
+        height:40px;
+        background:red;
+        position:absolute;
+        top:-8px;
+        left:1px;
+        background:url(../img/icons.png);
+        background-position: -280px -200px;
+    }
+  a{
+   text-decoration: none; 
+   color:black;
+  }
+    .select_city_wrap{
+        position: absolute;
+        left: 64px;
+        top: 24px;
+        height: 24px;
+        line-height: 24px;
+        padding-left: 32px;
+        font-size: 12px;
+        border:none;
+    }
+    .header_content_1{
+        display:block;
+        float: left;
+        width: 207px;
+        height: 24px;
+        margin: 28px 0 0 500px;
+        background:url(../img/logo_new.png);
+    }
+    .search_wrap{
+        float:right;
+        margin-top:28px;
+        input{
+            font-size: 12px;
+            height:20px;
+            width: 200px;
+            padding: 2px 4px;
+            border:none;
+            border-bottom: 1px solid #3e3e3e;
+            float:left;
+            margin-top:8px;
+            outline:none;
+        }
+        button {
+            float:left;
+        }
+        .search_btn{
+            width: 40px;
+            height: 40px;
+            background: url(../img/icons.png?4) center no-repeat;
+            background-position: -320px -200px;
+            border: none;
+            outline:none;
+
+
+        }
+        .nav_cart_wrap{
+            width:32px;
+            height:32px;
+            background: url(../img/icons.png?4) center no-repeat;
+            background-position: -240px -240px;
+            border: none;
+            outline:none;
+        }
+
+    }
+    
+}
+/*********头部的菜单*************/
+.header_content_3{
+    width:1200px;
+    height:20px;
+    padding:24px 0;
+    margin:0 auto;
+    clear:both;
+    ul{
+           width:624px;
+           height:20px;
+
+           margin:0 auto;
+          .active{
+          color:red;
+          }
+        li{ 
+
+            font-size: 16px;
+            list-style:none;
+            text-align: center;
+            padding:0 40px;
+            line-height: 20px;
+            float: left;
+            position:relative;
+            a{
+               text-decoration: none; 
+               color:black;
+               &:hover{
+                color:red;
+            }
+            }
+            .inner_wrap{
+                position:absolute;
+                left:0px;
+                top:20px;
+                width: 100%;
+                z-index: 520;
+                background:white;
+                display:none;
+                a {
+                    display:block;
+                    height:35px;
+                    line-height:35px;
+                    width:100%;
+                }
+            }
+            &:hover {
+                .inner_wrap {
+                display:block;
+                }
+            }
+        }
+    }
+}
+/*-----------图片---s---------*/
+.pic1{
+    height:258px;
+    background:url(../img/img_01.jpg);
+}
+.pic2{
+    height:288px;
+    background:url(../img/img_02.jpg);
+}
+.pic3{
+    height:260px;
+    background:url(../img/img_03.jpg);
+}
+.pic4{
+    height:638px;
+    background:url(../img/img_04.jpg);
+}
+/*------尾部------*/
+.footer {
+    border-top: 1px solid #e5e5e5;
+    text-align: center;
+    padding: 40px 0 20px;
+    background: #ebebeb;
+    .footer_tel {
+        line-height: 40px;
+        height: 40px;
+    }
+    .footer_nav {
+        p{
+            height: 40px;
+            line-height: 40px;
+            a {
+                height: 16px;
+                line-height: 16px;
+                padding: 0 12px;
+                margin-top: 12px;
+                border-right: 1px solid #3e3e3e;
+                color: #3e3e3e;
+                &:last-child {
+                    border: none;
+                }
+            }
+        }
+    }
+    .footer_address {
+        height: 40px;
+        line-height: 40px;
+    }
+    .footer_copy {
+        p{
+            height: 40px;
+            line-height: 40px;
+        }
+    }
 }

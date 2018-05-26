@@ -1,0 +1,102 @@
+@charset "UTF-8";
+.header {
+  height: 79px;
+  border-bottom: 1px solid #e5e5e5; }
+  .header .header-whole {
+    width: 1200px;
+    margin: 0 auto;
+    height: 20px;
+    padding: 29px 0; }
+    .header .header-whole .header-wrap {
+      width: 185px;
+      height: 20px;
+      float: left;
+      margin-right: 30px; }
+      .header .header-whole .header-wrap img {
+        width: 100%;
+        height: 100%; }
+    .header .header-whole h1 {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: normal;
+      float: left; }
+    .header .header-whole p {
+      float: right; }
+      .header .header-whole p a {
+        color: #ff4001; }
+
+/*--------主体---------*/
+.main {
+  padding: 60px 0 120px; }
+  .main .main-wrap {
+    width: 1200px;
+    margin: 0 auto; }
+    .main .main-wrap .form-wrap {
+      width: 250px;
+      margin: 0 auto;
+      line-height: 20px;
+      padding: 4px 0 5px 24px;
+      width: 226px; }
+      .main .main-wrap .form-wrap p {
+        margin-bottom: 30px; }
+        .main .main-wrap .form-wrap p .input1 {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          width: 100%;
+          font-size: 16px; }
+        .main .main-wrap .form-wrap p .input2 {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          width: 100%;
+          font-size: 16px; }
+        .main .main-wrap .form-wrap p .input3 {
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          width: 100%;
+          font-size: 16px; }
+        .main .main-wrap .form-wrap p span {
+          display: none; }
+      .main .main-wrap .form-wrap button {
+        display: block;
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        background: #ff4001;
+        color: #ffffff;
+        font-size: 16px;
+        margin-bottom: 20px;
+        border: none; }
+      .main .main-wrap .form-wrap a {
+        color: #ff4001;
+        text-decoration: none; }
+
+/*------尾部------*/
+.footer {
+  border-top: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 40px 0 20px;
+  background: #ebebeb; }
+  .footer .footer_tel {
+    line-height: 40px;
+    height: 40px; }
+  .footer .footer_nav p {
+    height: 40px;
+    line-height: 40px; }
+    .footer .footer_nav p a {
+      height: 16px;
+      line-height: 16px;
+      padding: 0 12px;
+      margin-top: 12px;
+      border-right: 1px solid #3e3e3e;
+      color: #3e3e3e; }
+      .footer .footer_nav p a:last-child {
+        border: none; }
+  .footer .footer_address {
+    height: 40px;
+    line-height: 40px; }
+  .footer .footer_copy p {
+    height: 40px;
+    line-height: 40px; }

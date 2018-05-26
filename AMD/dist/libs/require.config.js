@@ -1,0 +1,9 @@
+requirejs.config({
+    baseUrl:"dist",
+    paths:{
+        "jquery":"libs/jquery-3.3.1",
+        "gwc":"model/modle_gwc",
+        "cookie":"model/cookiehd",
+        "jqueryCookie":"libs/jquery.cookie"
+    }
+})

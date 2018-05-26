@@ -2,7 +2,7 @@
 body {
     min-width: 1200px;
     margin: auto;
-    background: #ebebeb;
+    
     overflow-x: hidden;
     font: 12px/1.5 "Hiragino Sans GB", "Microsoft YaHei", Helvetica, '宋体', STFangsong, STXihei, Arial, serif;
     color: #3e3e3e;
@@ -165,10 +165,11 @@ img {
 
         }
         .nav_cart_wrap{
-            width:32px;
-            height:32px;
-            background: url(../img/icons.png?4) center no-repeat;
-            background-position: -240px -240px;
+            display: block;
+            width:40px;
+            height:40px;
+            background:red;
+            background-position: -244px -242px;
             border: none;
             outline:none;
         }
@@ -230,183 +231,93 @@ img {
         }
     }
 }
-/*--------轮播图--------*/
-.layout {
-    width: 1200px;
-    margin: 0px auto;
-}
-.banner {
-    width: 100%;
-    height: 400px;
-    position: relative;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-    .nav_wrap {
-        display: none;
-        transition: all 0.5s;
-        a {
-            position: absolute;
-            width: 50px;
-            height: 100px;
-            top: 50%;
-            z-index: 520;
-            margin-top: -50px;
-            background: url(https://newimgcdn.lapetit.cn/web/images/home/banner_arrow.png) no-repeat;
-        }
-        .prev {
-            background-position: center left;
-            left: 20px;
-        }
-        .next {
-            background-position: center right;
-            right: 20px;
-        }
-    }
-    &:hover {
-        .nav_wrap {
-            display: block;
-        }
-    }
-}
-.fl {
-    float: left;
-}
-.fr {
-    float: right;
-}
-.clearfix:before {
-    content: "";
-    display: block;
-    width: 0px;
-    height: 0px;
-    font-size: 0px;
-    clear: both;
-}
-.content-wrap {
-    z-index: 520;
-    position: relative;
-   .layout {
-        margin: -5% auto 20px;
-        padding: 20px;
-        background-color: #f9f9f9;
-        .slider {
-            overflow: hidden;
-        }
-        .data-show {
-            .data-list {
-                overflow: hidden;
-                .item {
-                    float: left;
-                    width: 260px;
-                    padding: 19px;
-                    overflow: hidden;
-                    background-color: white;
-                    margin: 1px;
-                    font-size: 14px;
-                    .img-wrap {
-                        width: 260px;
-                        height: 260px;
-                        img {
-                            width: 100%;
-                            height: 100%;
-                        }
+/*----------主体----------*/
+.main{
+    .fliter_wrap{
+            
+            width:1200px;
+           
+            padding:16px 20px;
+            font-size: 14px;
+            margin:0 auto;
+            background: #f9f9f9;
+            .fliter_wrapp{
+                background:#fff;
+                padding:10px 16px;
+                width:1168px;
+                margin:0 auto;
+                clear:both
+                p{
+                    line-height:36px;
+                    span{
+                       float: left;
+                        margin-right: 40px;
                     }
-                    .p-info {
-                        .p-title {
-                            padding: 6px 0px;
-                            a {
-                                color: rgb(62, 62, 62);
-                            }
-                        }
-                        .p_tag {
-                            margin-bottom: 18px;
-                            height: 24px;
-                            span {
-                                padding: 2px 4px;
-                                color: white;
-                                background-color: #ff4001;
-                            }
-                        }
-                        .price_wrap {
-                            .new_price {
-                                display: block;
-                                margin-right: 4px;
-                                vertical-align: middle;
-                                small {
-                                    margin-right: 2px;
-                                }
-                            }
-                        }
-                        .card {
-                            font-size: 12px;
-                            a {
-                                color: #ff3500;
-                            }
-                        }
+                    a{
+                        float: left;
+                        color:black;
+                        margin-right: 40px;
                     }
                 }
             }
-            .more {
-                display: block;
-                text-align: right;
-                margin-top: 18px;
-                font-size: 14px;
-                color: rgb(62, 62, 62);
-            }
+       
+      }
+    .content-wrap{
+        margin:0 auto;
+        clear: both;
+        padding: 0 20px 40px;
+        background: #f9f9f9;
+        width:1200px;
+        height:auto;
+        .layout{
+            width:1200px;
+           
+            margin:0 auto;
         }
-   }
-}
-.comment_section {
-    background-color: white;
-    position: relative;
-    .nav {
-        position: absolute;
-        width: 30px;
-        height: 70px;  
-        top: 50%;
-        background: url(https://newimgcdn.lapetit.cn/web/images/home/swiper_arrow.png?v=1) no-repeat;                     
-        outline: none;
-    }
-    .prev {
-        background-position: center left;
-    }
-    .next {
-        background-position: center right;
-    }
-    .title {
-        font-size: 18px;
-        font-weight: bold;
-        padding: 16px 0 20px;
-        text-align: center;
-    }
-    .content {
-        width: 841px;
-        margin: 0px auto;
-        padding-bottom: 20px;
-        overflow: hidden;
-        text-align: center;
-        position: relative;
-    }
-    .slide-pic {
-        text-align: center;
-    }
-    .comment_content {
-        height: 260px;
-        padding-top: 60px;
-        background: url(https://newimgcdn.lapetit.cn/web/images/home/comment_bg.png) no-repeat center top;
-        .text {
-            height: 108px;
+        .data-list{
+            width:1200px;
             overflow: hidden;
-            line-height: 18px;
-            text-align: center;
-            padding: 0px 50px;
+            .item{
+                width:260px;
+                height:402px;
+                padding:19px;
+                margin:1px;
+                background:#fff;
+                float:left;
+            }
+            a{
+                display: block;
+                width:260px;
+                height:260px;
+                img{
+                    width:100%;
+                    height: 100%;
+                }
+            }
+            h3{
+                margin:15px 0;
+            }
+            span{
+                display: block;
+                margin:15px 0;
+            }
+            .a2{
+                    border:none;
+                    background: none;
+                    color:red;
+            }
+
         }
     }
 }
-/*------尾部------*/
+
+    
+
+
+
+/*--------尾部----------*/
 .footer {
+    clear:both;
     border-top: 1px solid #e5e5e5;
     text-align: center;
     padding: 40px 0 20px;
@@ -443,3 +354,4 @@ img {
         }
     }
 }
+
